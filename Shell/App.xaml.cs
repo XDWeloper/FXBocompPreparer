@@ -8,6 +8,7 @@
     using Catel.Logging;
     using Catel.Reflection;
     using Catel.Windows;
+    using FXBicompPreparer.classes;
 
     /// <summary>
     /// Interaction logic for App.xaml
@@ -43,6 +44,8 @@
 
             Log.Info("Calling base.OnStartup");
 
+            Nicon.Instanse.Show();
+
             base.OnStartup(e);
         }
 
@@ -51,7 +54,6 @@
             // Get advisory report in console
             ApiCopManager.AddListener(new ConsoleApiCopListener());
             ApiCopManager.WriteResults();
-
             base.OnExit(e);
         }
     }

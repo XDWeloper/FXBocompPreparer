@@ -20,5 +20,18 @@
         {
             await base.CloseAsync();
         }
+
+        public Command ClickButt {
+            get
+            {
+                return new Command(CloseWin);
+            } 
+        }
+
+        private void CloseWin()
+        {
+
+        } 
+
     }
 }
