@@ -1,4 +1,5 @@
-﻿<catel:Window x:Class="Shell.Views.MainWindow"
+﻿<catel1:Window
+    xmlns:catel1="clr-namespace:Catel.Windows;assembly=Catel.MVVM" x:Class="Shell.Views.MainWindow"
               xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
               xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
               xmlns:catel="http://schemas.catelproject.com"
@@ -14,4 +15,4 @@
         <Label Grid.Row="1" Grid.Column="0" Content="Here goes your real content" />
     </Grid>
     
-</catel:Window>
+</catel1:Window>
